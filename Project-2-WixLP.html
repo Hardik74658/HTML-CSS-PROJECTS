@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapted Wix</title>
+</head>
+<style>
+    /* ---------------------------------------Font Import--------------------------------------- */
+
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400;500;700;900&display=swap');
+
+    /* ---------------------------------------CSS Reset--------------------------------------- */
+    *,
+    ::before,
+    ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* ---------------------------------------Global Section--------------------------------------- */
+
+    :root {
+        --btn_bg: #116DFF;
+    }
+
+    body{
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    section{
+        margin: 1px;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid var(--btn_bg);
+        outline: none;
+        font-size: 1.15rem;
+        padding: 0.5rem 1.2rem;
+        padding-right: 5rem;
+        letter-spacing: 0.6px;
+        font-weight: 400;
+    }
+
+    .register-btn {
+        background-color: var(--btn_bg);
+        color: #ffffff;
+        font-size: 1.55rem;
+        padding: 0.7rem 2.8rem;
+        border-radius: 5rem;
+        font-weight: 500;
+    }
+
+    .register-btn:hover {
+        opacity: 0.89;
+    }
+
+    .register-btn-mid-sec{
+        background-color: var(--btn_bg);
+        color: #ffffff;
+        font-size: 1.4rem;
+        padding: 0.8rem 2rem;
+        border-radius: 5rem;
+        font-weight: 500;
+    }
+
+    /* ---------------------------------------Section 1--------------------------------------- */
+
+    .sec1 {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(/Images/Wix/section1.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        /* background-size: auto; */
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        /* background-size: contain; */
+        padding-bottom: 7vh;
+    }
+    
+    .logo{
+        width: 4.3vw;
+        height: 3.7vh;
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+    }
+
+    
+    /* .container1 {
+        width: 50vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    } */
+
+    .sec-1-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.1rem;
+        font-weight: 700;
+        word-spacing: 0.5px;
+        letter-spacing: 0.01px;
+        text-align: center;
+    }
+
+    .sec-1-submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+    }
+
+    /* ---------------------------------------Section 2--------------------------------------- */
+
+    .sec2,.sec4{
+        background-image: url(/Images/Wix/sec2.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10vw;
+        padding-right: 60vw;
+        padding-bottom: 10vh;
+    }
+    .sec2 h3,.sec3 h3,.sec4 h3{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    .sec2 p,.sec3 p,.sec4 p{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    /* ---------------------------------------Section 3--------------------------------------- */
+
+    .sec3{
+        background-image: url(/Images/Wix/sec3.jpg);
+        width: 100vw;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10vw;
+        padding-left: 60vw;
+        padding-bottom: 10vh;
+    }
+
+    /* ---------------------------------------Section 4--------------------------------------- */
+
+    .sec4{
+        background-image: url(/Images/Wix/sec4.jpg);
+        background-size: cover;
+    }
+
+    /* ---------------------------------------Section 5--------------------------------------- */
+
+        .sec5{
+            background-image: url(/Images/Wix/sec5.jpg);
+            background-size: cover;
+            height: 80vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:  0 20vw;
+            /* gap: 5rem; */
+        }
+
+
+        #last-btn{
+            display: inline-block;
+            font-weight: 400;
+        }
+
+        .sec5 div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sec5 div h3{
+            font-weight: 900;
+            font-size: 5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            /* letter-spacing: 0.1px; */
+        }
+
+    /* ---------------------------------------Section 6--------------------------------------- */
+
+        .sec6{
+            height: 20vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0 5vw;
+            padding-top: 5vh;
+        }
+
+        .sec6 div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 100;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sec6 div a+p{
+            font-size: 2.5rem;
+            font-weight: lighter;
+        }
+
+        .sec6 div img{
+            height: 4vh;
+            width: 5vw;
+        }
+
+</style>
+
+<body>
+    <section class="sec1">
+        <img src="/Images/Wix/wixlogo.png" alt="" class="logo">
+    <div class="container-1">
+            <div class="sec-1-text">
+                <h3>It's more than a website.</h3>
+                <h3>It's your future.</h3>
+            </div>
+            <div class="sec-1-submit">
+                <input type="email" name="" id="" placeholder="Enter your email adress">
+                <a class="register-btn" href="#">Start Now-></a>
+            </div>
+    </div>
+    </section>
+    <section class="sec2">
+        <div>
+            <h3>Build with the world’s most intuitive platform</h3>
+            <p>Create better websites with mobile-responsive templates, seamless drag & drop and unlimited customization.</p>
+            <a href="#" class="register-btn-mid-sec">Start Now</a>
+        </div>
+    </section>
+    <section class="sec3">
+        <div>
+        <h3>Manage your brand from one place</h3>
+        <p>Sell your products or services, start a blog and make smart decisions with clear analytics.</p>
+        <a href="#" class="register-btn-mid-sec">Start Now</a>
+    </div>
+    </section>
+    <section class="sec4">
+        <div>
+            <h3>Grow your online presence</h3>
+            <p>Boost traffic and increase engagement with built-in SEO tools, Facebook ads, email marketing and social posts.            </p>
+            <a href="#" class="register-btn-mid-sec">Start Now</a>
+        </div>
+    </section>
+    <section class="sec5">
+        <div >
+            <h3>Make your ideas come to life with a Wix site</h3>
+            <a href="#" id="last-btn" class="register-btn-mid-sec">Get Started</a>
+        </div>
+    </section>
+    <section class="sec6">
+        <div>
+            <a href="#">Privacy Policy</a>
+            <p>|</p>
+            <a href="#">Terms of use</a>
+        </div>
+        <div>
+            <a href="#"><img src="/Images/Wix/wixblack2-removebg-preview.png" alt=""></a>
+            <p>|</p>
+            <a href="#">This website was designed with Wix.</a>
+        </div>
+        <div>
+            <p>© 2006 - 2022 Wix.com, Inc</p>
+        </div>
+    </section>
+</body>
+
+</html>
