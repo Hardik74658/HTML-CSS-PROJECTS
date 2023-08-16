@@ -1,0 +1,355 @@
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Lora', serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;900&family=Lora:wght@400;700&display=swap');
+
+/* ----------------------------CSS Reset---------------------------- */
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ----------------------------Global Classes---------------------------- */
+
+:root{
+    --primary-font: 'DM Sans', sans-serif;
+    --title-font: 'Lora', serif;
+    /* --primary-col: #002333; */
+    --primary-col: #fff;
+    --primary-light: #037cb4;
+    /* --btn-col: #00FF84; */
+    --btn-col: #f98603;
+    --secondary-col: #000;
+    --dark-bg: #000;
+    --btn-shadow-bg: #b4f8fa;
+    /* --third-col: #3722d3; */
+    --third-col: #f98603;
+}
+
+body{
+    font-family: var(--primary-font);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-glow{
+    color: var(--btn-col);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 1px solid var(--btn-col);
+    border-radius: 5px;
+    padding: 0.3rem 2rem;
+}
+.btn-glow:hover{
+    background-color: var(--btn-col);
+    color: var(--primary-col);
+}
+
+.btn-normal{
+    font-size: 1.13rem;
+    font-weight: 700;
+    padding: 0.9rem 4.5rem;
+    border-radius: 5px;
+    background-color: var(--btn-col);
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+}
+.btn-normal:hover{
+    opacity: 0.9;
+}
+
+.btn-shadow{
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--third-col);
+    border-radius: 5px;
+}
+.btn-shadow:hover{
+    background-color: var(--btn-shadow-bg);
+}
+section{
+    padding: 0 10vw;
+}
+
+/* ----------------------------Navbar---------------------------- */
+nav{
+    height: 10vh;
+    background-color: var(--primary-col);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+nav img{
+    height: 5vh;
+}
+
+/* ----------------------------Hero Section---------------------------- */
+.hero{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    /* position: relative; */
+}
+.hero::after{
+    content: "";
+    /* background: url("/landing_page/images/background1.jpg"); */
+    background: url("/landing_page/images/background2.jpg");
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+.hero::before{
+    content: "";
+    background-color: var(--dark-bg);
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    z-index: -2;
+}
+
+.hero-text{
+    /* color: var(--secondary-col); */
+    color: var(--primary-col);
+}
+.hero-text h1{
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.hero h1 + p{
+    font-size: 1.13rem;
+    margin: 1rem 0;
+    line-height: 1.8rem;
+}
+.hero-text button + p{
+    font-size: 12px;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+}
+
+.hero-video{
+    margin-right: 8vw;
+}
+
+/* ----------------------------Popular Classes Section---------------------------- */
+
+.popular-classes h3{
+    font-weight: 700;
+    font-size: 26px;
+    margin: 4rem 0 2.5rem;
+}
+
+.classes-container{
+    display: flex;
+    justify-content: space-between;
+}
+.class-box{
+    /* border: 2px solid blue; */
+    width: 270px;
+}
+.class-box img{
+    border-radius: 10px;
+}
+.class-box p{
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 1rem;
+    line-height: 25px;
+}
+.btn-shadow-container{
+    margin: 2.5rem 0 4rem auto;
+    width: fit-content;
+    
+}
+
+/* ----------------------------Intro Section---------------------------- */
+.intro{
+    background-color: var(--third-col);
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 3rem;
+    color: var(--secondary-col);
+    padding: 2rem 10vw;
+}
+
+
+.intro-text h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.intro-text p{
+    font-weight: 700;
+    font-size: 18px;
+    margin: 1rem 0;
+}
+
+.intro-text ul{
+    margin-left: 1.2rem;
+}
+.intro-text ul li{
+    margin: 1rem 0;
+}
+
+/* ----------------------------features Section---------------------------- */
+.features{
+    text-align: center;
+    color: var(--primary-col);
+    background-color: var(--secondary-col);
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.features h3{
+    font-family: var(--title-font);
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.feature-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature{
+    /* border: 2px solid red; */
+    width: 250px;
+}
+
+.feature .icon{
+    color: var(--primary-col);
+    /* opacity: 0.3; */
+}
+
+.feature h4{
+    font-size: 18px;
+    margin: 1.5rem 0;
+}
+
+.feature p{
+    font-size: 18px;
+}
+
+/* ----------------------------footer---------------------------- */
+
+footer{
+    background-color: var(--primary-col);
+    text-align: center;
+    padding: 5rem 30vw;
+    color: var(--secondary-col);
+}
+
+footer h3{
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+footer button + p{
+    font-size: 12px;
+    margin: 1rem 0 7rem;
+}
+
+
+/* ----------------------------Media Queries---------------------------- */
+@media (max-width: 1180px){
+    section, nav{
+        padding: 0 2vw;
+    }
+    .hero-video{
+        margin-right: 0;
+    }
+    .class-box{
+        width: 200px;
+    }
+    .class-box img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .hero-video iframe{
+        width: 400px;
+    }
+    .hero, .hero::before, .hero::after{
+        height: 175vh;
+    }
+}
+
+@media (max-width: 768px){
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-video iframe{
+        width: 560px;
+    }
+    .intro{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 570px){
+    .hero-video{
+        width: 90%;
+        /* border: 2px solid yellow; */
+    }
+    .hero-video iframe{
+        /* border: 2px solid white; */
+        width: 100%;
+    }
+    .classes-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .class-box{
+        width: 95%;
+    }
+    .feature-container{
+        flex-direction: column;
+        gap: 4rem;
+
+    }
+    .feature{
+        width: 95%;
+    }
+    footer{
+        padding: 5rem 5vw;
+    }
+}
+
+@media (max-width: 435px){
+    nav{
+        flex-direction: column;
+        height: 15vh;
+        justify-content: space-evenly;
+    }
+    .hero{
+        gap: 1rem;
+    }
+}
